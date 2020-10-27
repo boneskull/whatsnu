@@ -1,17 +1,16 @@
 {
-  "name": "packagename",
+  "name": "whatsnu",
   "version": "0.0.0",
-  "private": true,
-  "description": "Shankle short loin porchetta strip steak tongue drumstick shoulder shank turkey pork loin picanha flank.",
+  "description": "Provide a \"What's New\" subcommand to your users -- a library for CLI apps",
   "main": "src/index.js",
   "scripts": {
     "posttest": "markdownlint \"*.md\" && eslint .",
     "test": "nyc mocha \"test/**/*.spec.js\"",
-    "release": "standard-version"
+    "release": "standard-version -a"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/boneskull/packagename"
+    "url": "https://github.com/boneskull/whatsnu"
   },
   "keywords": [],
   "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
@@ -19,7 +18,13 @@
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "debug": "^4.2.0",
+    "escape-string-regexp": "^4.0.0",
+    "marked": "^1.2.2",
+    "marked-terminal": "^4.1.0",
+    "read-pkg-up": "^7.0.1"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.11.0",
